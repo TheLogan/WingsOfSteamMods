@@ -1,0 +1,39 @@
+#MainView {
+    height: 100vh;
+    background-color: #989891;
+}
+         
+#footer {
+    margin-top: -3em;
+    background-color: #4A4A4A;
+    min-width: 100vw;
+    margin-left: -10px;
+    padding: 1px 10px;
+    min-height: 30px;
+}
+
+.navButton {
+    border-width: 1px 0;
+    border-color: lightgray;
+}
+
+.active {
+    background-color: rgb(101, 164, 0);
+    border-color: rgb(59, 96, 0);
+}
+
+.cargoField {
+    padding: 10px;
+    margin: 10px;
+}
+
+.cargoField:nth-child(odd) {
+    background-color: #B5B5B5;
+}
+.cargoField:nth-child(even) {
+    background-color: #666666;
+}
+
+/*#PlayerGoods #TradeGoods {*/
+/*    overflow-y: scroll;*/
+/*}*/

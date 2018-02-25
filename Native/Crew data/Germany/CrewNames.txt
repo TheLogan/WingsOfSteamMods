@@ -1,0 +1,24 @@
+{
+	"FemaleNames": ["Frances", "Ella", "Mabel", "Hattie", "Lillie", "Lena", "Ada", "Jennie", "Cora", "Gertrude", "Grace", "Katherine", "Bessie", 
+					"Edna", "Lula", "Clara", "Eva", "Lillian", "Florence", "Alice", "Laura", "Elizabeth", "Fannie", "Annie", "Anna", "Josephine", 
+					"Catherine", "Margaret", "Emma", "Edith", "Julia", "Louise", "Dora", "Ethel", "Jessie", "Bertha", "Carrie", "Ida", "Helen", 
+					"Marie", "Martha", "Mary", "Mattie", "Maude", "Minnie", "Myrtle", "Nellie", "Pearl", "Rose", "Sarah", "Ekaterina", "Ruby", "Garnet", 
+					"Amethyst", "Sapphire", "Lapis", "Jade", "Arcadia", "Sena", "Jessie", "Mildred", "Natalie", "Dawn", "Alexandria", "Hypatia", "Delilah", 
+					"Ariadne", "Enya", "Saoirse", "Maria", "Anastasia", "Julia", "Kate", "Nastya", "Dasha", "Karolina", "Olga", "Alina", "Natalia", "Alexandra", 
+					"Marina", "Monika", "Victoria", "Irina", "Marta", "Kasia", "Veronika", "Katya", "Mary", "Paulina", "Dominika", "Liza", "Elena", "Daria", 
+					"Tanya", "Ola", "Aleksandra", "Diana", "Ann", "Polina", "Klaudia", "Tereza", "Kinga", "Maya", "Annie", "Aneta", "Mary Ann", "Azlynn", "Janet"],
+
+	"MaleNames":   ["Michael", "Louis", "Grover", "Earl", "Frederick", "Ralph", "Paul", "Peter", "Charlie", "Willie", "Fred", "Lee", "Walter", "Andrew", 
+					"Howard", "Joseph", "Benjamin", "Will", "Harry", "Edward", "Ernest", "George", "Jim", "Thomas", "William", "Tom", "Herbert", "Charles", 
+					"James", "Jesse", "Daniel", "Alfred", "Martin", "Arthur", "Elmer", "Henry", "David", "Robert", "Oscar", "Lewis", "Clarence", "John", "Sam", 
+					"Roy", "Frank", "Carl", "Albert", "Richard", "Joe", "Samuel", "Ampersand", "Richter", "Toast", "Vin", "Balthazar", "Tiber", "Spock", "Khan", 
+					"Sulu", "Hemingway", "Abel", "Copperspoon", "Troy", "Duxe", "Blake", "Andy", "Kal", "Tobias", "Tobias", "Poe", "Freud", "Nikita", "George", 
+					"Dima", "Daniel", "Adam", "Sasha", "Vlad", "Dávid", "Sergey", "Alexander", "Ivan", "Mateusz", "Artem", "Martin", "Peter", "Andrey", "Pavel", 
+					"Anton", "Andrew", "Nick", "John", "Max", "Dmitry", "Jakub", "Igor", "Szymon", "Michael", "Vladimir", "Kamil", "Bartek", "Mark", "Maxim", 
+					"Egor", "Rudolf"],
+					
+	"Surnames":	   ["Uretsky", "Buzard", "Golya", "Finney", "Vallee", "Homer", "Steinman", "Magnuson", "Capewell", "Kuze", "Reinerman", "Venturini", "Carmel",
+					"Nisenson", "Ali", "Burkett", "Dickerson", "Boudjellaba", "Flachsenhar", "Avila", "Melack", "Poehler", "Lorizio", "Loster", "Rasekh", 
+					"Benitz", "Westra", "Saleh", "Charters", "Hudner", "Sheehan", "Morlock", "Campo", "Laver", "Slonina", "Hupp", "Baldisserotto", "Row",
+					"Luyendyk", "Kosinski", "Pharr", "Rainey", "Students", "Kriegel", "Wyler", "Eisen", "Singh", "Seymour", "Baird", "Skye", "Kalinin"]
+}

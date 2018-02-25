@@ -1,0 +1,700 @@
+{
+  "allAircrafts": [
+    {
+      "aircraftType": "BI_SCOUT3",
+      "position": {
+        "x": -4900.72559,
+        "y": 66.86419,
+        "z": 1169.53113
+      },
+      "rotation": {
+        "x": -0.106641009,
+        "y": -0.698929,
+        "z": -0.106605336,
+        "w": 0.6991146,
+        "eulerAngles": {
+          "x": 342.654816,
+          "y": 270.015137,
+          "z": 0.0006180634
+        }
+      },
+      "targetDestination": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "faction": 1,
+      "engines": [
+        {
+          "hp": 100,
+          "state": 0
+        }
+      ],
+      "velocity": {
+        "x": -0.290668964,
+        "y": -0.003944345,
+        "z": -0.0001389724
+      },
+      "torque": {
+        "x": -2.176519E-05,
+        "y": 0.0012349739,
+        "z": -0.00211331225
+      }
+    }
+  ],
+  "allOutposts": [
+    {
+      "OutpostName": "Davenfort",
+      "CargoShopsInOutpost": [
+        {
+          "stock": [
+            {
+              "stock": [
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 10,
+                  "price": 2.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 20,
+                  "price": 12.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 4.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 27.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 12.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 13.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 120.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 45.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 13.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 12.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 10.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 20.0,
+                  "min": 0,
+                  "max": 0
+                }
+              ]
+            },
+            {
+              "stock": [
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 40.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 12.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 15.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 25.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 7.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 16.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 115.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 8.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 27.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 19.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 17.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 39.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 2.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 9.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 22.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 20.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 58.0,
+                  "min": 0,
+                  "max": 0
+                }
+              ]
+            },
+            {
+              "stock": [
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 45.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 38.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 18.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 34.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 100.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 80.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 160.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 35.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 30.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 35.0,
+                  "min": 0,
+                  "max": 0
+                }
+              ]
+            },
+            {
+              "stock": [
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 40.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 11.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 4.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 28.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 6.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 7.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 11.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 8.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 27.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 26.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 45.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 25.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 11.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 4.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 28.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 60.0,
+                  "min": 0,
+                  "max": 0
+                },
+                {
+                  "name": "",
+                  "buy": true,
+                  "sell": true,
+                  "hidden": false,
+                  "minMax": false,
+                  "number": 0,
+                  "price": 15.0,
+                  "min": 0,
+                  "max": 0
+                }
+              ]
+            }
+          ],
+          "ShopName": "Amelia Hawk"
+        }
+      ],
+      "AircraftShopsInOutpost": [
+        {
+          "Aircrafts": null,
+          "ShopName": "AircraftTrader"
+        }
+      ],
+      "OutpostMoney": 100
+    }
+  ],
+  "playerModel": {
+    "CurrentPlayerState": 0,
+    "Money": 0
+  }
+}

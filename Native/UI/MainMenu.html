@@ -1,0 +1,187 @@
+<head>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .well {
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background: #b3b3b3;
+            border-color: darkgrey;
+        }
+
+        button {
+            background: #30cbff;
+            border-radius: 2px;
+            color: aliceblue;
+            border: 0px;
+            width: 100px;
+        }
+
+        [hidden],
+        template {
+            display: none;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            height: 30px;
+            width: 100%;
+            background: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainMenu" class="center well">
+        <h1>Main Menu</h1>
+        <table class="center">
+            <tr>
+                <td>
+                    <button onclick="newGame()">Play</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="loadSavedGameMenu()">Load</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="loadOptions()">Options</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="loadCredits()">Credits</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="quit()">Quit</button>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <p>mod loaded: <span id="modName"></span></p>
+        </div>
+    </div>
+
+    <div id="credits" class="well center" hidden>
+        <button onclick="loadMainMenu()">back</button>
+        <h1>Credits</h1>
+        <h3>Designers</h3>
+        <ul>
+            <li>Shannon Ward</li>
+            <li>Tim K. Logan</li>
+        </ul>
+        <h3>Concept Art</h3>
+        <ul>
+            <li>Sam Athene</li>
+            <li>Duy Tan Do</li>
+        </ul>
+        <h3>Assets used</h3>
+        <ul>
+            <li>UnityFS - http://unityfs.chris-cheetham.com</li>
+            <li>Power UI</li>
+            <li>AQUAS</li>
+            <li>Behaviour Designer</li>
+            <li>Gaia</li>
+            <li>Relief Terrain Pack</li>
+            <li>TrueSky</li>
+            <li>Tradesys</li>
+            <li>UFPS</li>
+            <li>3DForge</li>
+            <li>JsonDotNet</li>
+            <li>OBJImport</li>
+        </ul>
+        <h3>Special Thanks</h3>
+        <ul>
+            <li>Luke Briggs - Donation of PowerUI and being generally very awesome and helpful.</li>
+            <li>The gang in the Infinity Aspiration Discord channel</li>
+            <li>Branislav Balvan - first aircraft and gun</li>
+            <li>Emma Vantaa - first Tradehouse</li>
+        </ul>
+        <h3>Original concept</h3>
+        <ul>
+            <li>Tim K. Logan</li>
+        </ul>
+    </div>
+
+    <div id="loadGameMenu" class="well center" hidden>
+        <h1>Load saved game</h1>
+        <div id="loadGameWell">
+
+        </div>
+        <button onclick="loadMainMenu()">Back</button>
+    </div>
+</body>
+
+<script src="file://mods/Native/UI/Libraries/jQuery.txt" type="text/javascript"></script>
+<script type="text/javascript">
+    var mainMenu;
+    var creditsMenu;
+    var loadMenu;
+    var wingsOfSteam;
+
+    function Initialize() {
+        mainMenu = $("#mainMenu");
+        creditsMenu = $("#credits");
+        loadMenu = $("#loadGameMenu");
+        wingsOfSteam = importNamespace("WingsOfSteamAccess");
+    }
+
+    function loadMainMenu() {
+        mainMenu.css('display', 'block');
+        creditsMenu.hide();
+        loadMenu.hide();
+    }
+
+    function loadSavedGameMenu() {
+        mainMenu.hide();
+        creditsMenu.hide();
+        loadMenu.css('display', 'block');
+        
+        var allSaves = wingsOfSteam.Management.LoadAllSavegames();
+        var str = "";
+        if (allSaves.length === 0) {
+            str = "<p>No saves found</p>";
+        } else {
+            for (var i = 0; i < allSaves.length; i++) {
+                str += "<button id='" + allSaves[i] + "' onclick='loadSavedGame(this.id)'>" + allSaves[i] + "</button>";
+            }
+        }
+        $("#loadGameWell").html(str);
+//        document.getElementById("loadGameWell").innerHTML = str;
+    }
+
+    function newGame() {
+        wingsOfSteam.Management.StartGame();
+    }
+
+    function loadOptions() {
+        console.log("Error: Load Options is not yet implemented");
+    }
+
+    function loadCredits() {
+        mainMenu.hide();
+        creditsMenu.css('display', 'block');
+        loadMenu.hide();
+    }
+    
+    function loadSavedGame(modName) {
+        console.log("Loading level : " + modName.toString());
+        wingsOfSteam.Management.LoadGame(modName);
+    }
+    
+    function quit() {
+        wingsOfSteam.Management.ExitProgram();
+    }
+</script>

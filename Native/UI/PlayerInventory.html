@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" href="bootstrap.html">
+    <link rel="stylesheet" href="logans.html" />
+</head>
+<h1>Inventory</h1>
+<div id="playerInventory" class="well">
+    
+</div>
+
+<button value="Close" onclick="closeInventory"></button>
+
+
+<script type="text/javascript">
+    function closeInventory() {
+        var moddables = importNamespace("WingsOfSteamAccess");
+        moddables.Player.CloseInventory();
+    }
+</script>

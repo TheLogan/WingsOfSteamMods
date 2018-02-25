@@ -1,0 +1,471 @@
+{
+  "CompanyName": "TestCompany",
+  "Aircrafts": [
+    {
+      "CrewMembers": [],
+      "CompanyName": "TestCompany",
+      "AircraftId": "TP1",
+      "DisplayName": "TestPlane",
+      "Description": "Test plane for testing the component selection screen",
+      "Tier": 1,
+      "BaseBuyPrice": 15,
+      "BaseSellPrice": 11,
+      "StockMaxSpeed": 0,
+      "BaseWeight": 500.0,
+      "SuggestedMaxWeight": 200.0,
+      "CenterOfGravity": {
+        "GoName": "CoG",
+        "Pos": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -0.1
+        },
+        "Rot": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "Scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      "ControlSurfaces": [
+        {
+          "InvertSurface": true,
+          "MaxDeflectDegrees": 30,
+          "RootHingeOffset": 60,
+          "TipHingeOffset": 60,
+          "InputName": "Pitch",
+          "MovableMeshName": "",
+          "RotationAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "WingData": {
+            "PhysicsResolution": 5,
+            "WingTipWidth": 0.0,
+            "WingTipSweep": 0,
+            "WingTipAngle": 0,
+            "GoName": null,
+            "Pos": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Rot": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Scale": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "GoName": "TailCtrl",
+          "Pos": {
+            "x": 0.0,
+            "y": -0.6,
+            "z": -6.3
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 0.2,
+            "z": 1.8
+          }
+        },
+        {
+          "InvertSurface": true,
+          "MaxDeflectDegrees": 30,
+          "RootHingeOffset": 60,
+          "TipHingeOffset": 60,
+          "InputName": "Roll",
+          "MovableMeshName": "",
+          "RotationAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "WingData": {
+            "PhysicsResolution": 6,
+            "WingTipWidth": 0.0,
+            "WingTipSweep": 0,
+            "WingTipAngle": 0,
+            "GoName": null,
+            "Pos": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Rot": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Scale": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "GoName": "CtrlWingLeft",
+          "Pos": {
+            "x": -5.5,
+            "y": 2.35,
+            "z": -0.8
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        },
+        {
+          "InvertSurface": false,
+          "MaxDeflectDegrees": 30,
+          "RootHingeOffset": 60,
+          "TipHingeOffset": 60,
+          "InputName": "Roll",
+          "MovableMeshName": "",
+          "RotationAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "WingData": {
+            "PhysicsResolution": 6,
+            "WingTipWidth": 0.0,
+            "WingTipSweep": 0,
+            "WingTipAngle": 0,
+            "GoName": null,
+            "Pos": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Rot": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Scale": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "GoName": "CtrlWingRight",
+          "Pos": {
+            "x": 5.5,
+            "y": 2.35,
+            "z": -0.8
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        },
+        {
+          "InvertSurface": false,
+          "MaxDeflectDegrees": 30,
+          "RootHingeOffset": 60,
+          "TipHingeOffset": 60,
+          "InputName": "Yaw",
+          "MovableMeshName": "",
+          "RotationAxis": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "WingData": {
+            "PhysicsResolution": 1,
+            "WingTipWidth": 0.0,
+            "WingTipSweep": 0,
+            "WingTipAngle": 0,
+            "GoName": null,
+            "Pos": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Rot": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Scale": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "GoName": "VerticalTailCtrl",
+          "Pos": {
+            "x": 0.0,
+            "y": 0.4,
+            "z": -6.2
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.2,
+            "y": 2.3,
+            "z": 2.0
+          }
+        }
+      ],
+      "Engines": [
+        {
+          "EngineName": null,
+          "IdleRpm": 200,
+          "MaxRpm": 2200,
+          "ForceAtMaxRpm": 1800,
+          "RpmAddedPerKnot": 10,
+          "RotationAxis": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "PropParentName": "Engine",
+          "SlowPropName": "SlowProp",
+          "FastPropName": "FastProp",
+          "RpmToSwitch": 1300,
+          "EngineStartSound": "EngineStart",
+          "EngineLoopSound": "EngineRun",
+          "GoName": "Engine",
+          "Pos": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 3.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "Guns": [],
+      "Turrets": [],
+      "Wheels": [
+        {
+          "GroundAudio": false,
+          "Steerable": false,
+          "WheelBrake": false,
+          "WheelRadius": 0.7,
+          "WheelMass": 20.0,
+          "RpmForMaxVol": 0,
+          "MaxVolume": 0.0,
+          "InvertSteering": false,
+          "SteeringAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "InvertBrake": false,
+          "BrakeTorque": 0,
+          "GoName": "WheelL",
+          "Pos": {
+            "x": -0.6,
+            "y": -1.9,
+            "z": 0.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "GroundAudio": false,
+          "Steerable": false,
+          "WheelBrake": false,
+          "WheelRadius": 0.7,
+          "WheelMass": 20.0,
+          "RpmForMaxVol": 0,
+          "MaxVolume": 0.0,
+          "InvertSteering": false,
+          "SteeringAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "InvertBrake": false,
+          "BrakeTorque": 0,
+          "GoName": "WheelR",
+          "Pos": {
+            "x": 0.6,
+            "y": -1.9,
+            "z": 0.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "GroundAudio": false,
+          "Steerable": false,
+          "WheelBrake": true,
+          "WheelRadius": 0.5,
+          "WheelMass": 10.0,
+          "RpmForMaxVol": 0,
+          "MaxVolume": 0.0,
+          "InvertSteering": false,
+          "SteeringAxis": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "InvertBrake": false,
+          "BrakeTorque": 100,
+          "GoName": "Back Wheel",
+          "Pos": {
+            "x": 0.0,
+            "y": -1.0,
+            "z": -6.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        }
+      ],
+      "Wings": [
+        {
+          "PhysicsResolution": 10,
+          "WingTipWidth": 1.0,
+          "WingTipSweep": 0,
+          "WingTipAngle": 0,
+          "GoName": "WingTopLeft",
+          "Pos": {
+            "x": -2.0,
+            "y": 2.35,
+            "z": -0.8
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        },
+        {
+          "PhysicsResolution": 10,
+          "WingTipWidth": 1.0,
+          "WingTipSweep": 0,
+          "WingTipAngle": 0,
+          "GoName": "WingTopRight",
+          "Pos": {
+            "x": 2.0,
+            "y": 2.35,
+            "z": -0.8
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        },
+        {
+          "PhysicsResolution": 10,
+          "WingTipWidth": 1.0,
+          "WingTipSweep": 0,
+          "WingTipAngle": 0,
+          "GoName": "WingBottomLeft",
+          "Pos": {
+            "x": -4.3,
+            "y": -0.15,
+            "z": 0.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 6.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        },
+        {
+          "PhysicsResolution": 10,
+          "WingTipWidth": 1.0,
+          "WingTipSweep": 0,
+          "WingTipAngle": 0,
+          "GoName": "WingBottomRight",
+          "Pos": {
+            "x": 4.3,
+            "y": -0.15,
+            "z": 0.0
+          },
+          "Rot": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 6.0,
+            "y": 0.2,
+            "z": 2.0
+          }
+        }
+      ]
+    }
+  ]
+}

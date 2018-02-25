@@ -1,0 +1,40 @@
+{
+  "Lines": [
+    [
+      "What are we waiting for, {PcName}? Let's get out there and show the world what we're made of!",
+      "They say fortune favors the bold right? What do you say we prove them right?",
+      "C'mon, no time like the present. Should always do things today instead of putting them off for later.",
+      "Thanks for letting me join up with you, {PcName}. {CrewHome} was nice and all, but the same old same old was getting so boring!"
+    ],
+    [
+      "I can't wait to see what today will bring! There's so much going on, there's always something new around the corner.",
+      "Oooh, {PcName}! Do you think we can buzz the rooftops? I'd love to see the look on their faces as we zoomed by.",
+      "It'd be way more exciting if we didn't need a plane to fly, but it would mean there wouldn't be any planes to watch.",
+      "Do you think we could just fly around and sightsee for a bit? Wouldn't mind some relaxing flying without having to worry about getting something done."
+    ],
+    [
+      "You go on ahead {PcName}, I'm going to work on some things over here. Just let me know when you're ready.",
+      "Flying is nice and all, but things seem so much more peaceful and simple on the ground. Don't you think so?",
+      "The skies here are so dangerous lately, I wish people could find better ways to resolve their issues than with violence.",
+      "I miss {CrewHome}, maybe we can visit again soon? It's not perfect, but there's no place like home."
+    ],
+    [
+      "Let's get on with it already {PcLastName}. I don't have all day.",
+      "You think times are rough now? The War was worse.",
+      "People need to get over themselves and just move on. Life is rotten, you just have to deal with it.",
+      "I'd rather be doing something else, but at least this pays."
+    ]
+  ],
+  "CrewTypes": [
+    "Negotiator",
+    "Navigator",
+    "Gunner",
+    "Mechanic"
+  ],
+  "PersonalityTypes": [
+    "Adventurous",
+    "Cautious",
+    "Carefree",
+    "Gruff"
+  ]
+}

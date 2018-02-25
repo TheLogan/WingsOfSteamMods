@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fcb45a5ae25269d4bbca7b65eada502a
+timeCreated: 1494240091
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Great Victorian
+  fontNames:
+  - Great Victorian
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a576ec45892a18a44a910b8d64859014, type: 3}
+  - {fileID: 12800000, guid: 23f92929e5ef8c14997b34a5120d0e5a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

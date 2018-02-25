@@ -1,0 +1,152 @@
+<!--Loads the style file-->
+<link rel="stylesheet" href="file://mods/Native/UI/Styling/nativeStyles.css" /> 
+
+<head>
+    <style>
+        #slidecontainer {
+            width: 100%; /* Width of the outside container */
+        }
+
+        /* The slider itself */
+        .slider {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            appearance: none;
+            width: 100%; /* Full-width */
+            height: 25px; /* Specified height */
+            background: #d3d3d3; /* Grey background */
+            outline: none; /* Remove outline */
+            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        /* Mouse-over effects */
+        .slider:hover {
+            opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #4CAF50; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #4CAF50; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <p>weight / suggested max</p>
+    <p>player cash</p>
+    <p>shop cash</p>
+</div>
+    
+<div id="slidecontainer">
+    <range min="1" max="100" value="50" class="slider" id="myRange"></range>
+</div>
+    
+
+<div id="main-wrap">
+    <!--    <scrollbar orient='horizontal' style='min-width: 100px;' target='_blank' onmouseup="myFunction(event)" value="50" />-->
+    <div id="leftbar">
+        <h1>Player</h1>
+        <div id="playerCargoWell" class="shoppingWell" onmousedown='DragScroller.StartScroll' onmousemove='DragScroller.ScrollNow'></div>
+
+    </div>
+    <div id="rightbar">
+        <h1>Trader</h1>
+        <div id="shopCargo" class="shoppingWell" onmousedown='DragScroller.StartScroll' onmousemove='DragScroller.ScrollNow'></div>
+    </div>
+</div>
+    
+<div id="footer">
+    <div class="center">
+        <button onclick="Cancel()">Cancel</button>
+        <button onclick="AttemptTrade">Trade</button>
+    </div>
+</div>
+</body>
+
+<!--Loads the jQuery library-->
+<script src="file://mods/Native/UI/Libraries/jQuery.txt" type="text/javascript"></script>
+<script type="text/javascript">
+    var wingsOfSteam;
+
+    function myFunction(e) {
+        console.log("function ran : " + e.target.position.toString()); 
+
+    }
+
+
+    function Initialize(tradepostName) {
+        wingsOfSteam = importNamespace("WingsOfSteamAccess");
+
+        var storeStock = wingsOfSteam.CargoTrade.GetStoreCargo(tradepostName);
+        var playerStock = wingsOfSteam.PlayerAircraft.GetPlayerAircraftStorage();
+        
+        var storeHtml  = "";
+        var playerHtml = "";
+
+        for (var ssI = 0; ssI < storeStock.count; ssI++) {
+            var currentCategoryName = wingsOfSteam.CargoTrade.GetCargoCategoryName(ssI);
+            storeHtml += "<div class='title'><h1>" + currentCategoryName + "</h1></div>"; 
+            for (var ssU = 0; ssU < storeStock[ssI].stock.count; ssU++) {
+                var currentStockName = wingsOfSteam.CargoTrade.GetCargoName(ssI, ssU);
+                storeHtml += "<div class='well'>" +
+                    "<h4>" + currentStockName + "</h4>" +
+                    "<p>amount: " + storeStock[ssI].stock[ssU].number + "</p>" +
+
+                    "<scrollbar orient='horizontal' style='min- width: 100px;' />" +
+//                    "<div id='slidecontainer'>"+
+//                        "<input type='range' min='1' max='100' value='50' class='slider' id='myRange'>" +
+//                    "</div>" +
+                    "<input type='number'/>"+
+                    "</div>";
+            }
+            storeHtml += "<br/>";
+        }
+
+        for (var psI = 0; psI < playerStock.count; psI++) {
+            var currentCatName = wingsOfSteam.CargoTrade.GetCargoCategoryName(psI);
+            playerHtml += "<div class='title'><h1>" + currentCatName + "</h1></div>";
+            for (var psU = 0; psU < playerStock[psI].stock.count; psU++) {
+                var currentplayerStockName = wingsOfSteam.CargoTrade.GetCargoName(psI, psU);
+                playerHtml += "<div class='well'>" +
+                    "<h4>" + currentplayerStockName + "</h4>" +
+                    "<p>amount: " + storeStock[psI].stock[psU].number + "</p>" +
+                    "<input type='number'/>" +
+                    "</div>";
+            }
+            playerHtml += "<br/>";
+        }
+        
+        $("#playerCargoWell").html(playerHtml);
+        $("#shopCargo").html(storeHtml);
+        
+        console.log("Done running the loop");
+
+//    Get:
+//    max carry weight
+//    current carry weight
+//    current cargo (as int[][] )
+    }
+
+    function AttemptTrade() {
+        var result = wingsOfSteam.CargoTrader.ConfirmTrade();
+
+        if (result === true) {
+
+        } else {
+            console.log("for some reason the trade did not go through");
+        }
+    }
+</script>

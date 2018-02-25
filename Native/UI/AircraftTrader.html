@@ -1,0 +1,140 @@
+<!--<head>-->
+<!--    <link rel="stylesheet" href="bootstrap.html">-->
+    <link rel="stylesheet" href="logans.html"/>
+<!--</head>-->
+
+
+<!--Needs a few menues
+* Select aircraft from hangar
+* Sell aircraft
+* Buy aircraft
+* buy aircraft upgrade
+* Handle aircraft upgrades
+* Sell aircraft upgrades
+    -->
+<div id="main" class="Well">
+    <h1>What do you want?</h1>
+    <ul class="nobullet">
+        <li><input type="button" value="Transfer aircraft" class="btn btn-primary" onclick="displayTransferAircraftMenu"/></li>
+        <li><input type="button" value="Trade aircrafts" class="btn btn-primary" onclick="displayAircraftTrade" /></li>
+        <li><input type="button" value="Trade upgrades" class="btn btn-primary" onclick="displayUpgradeTrade"/></li>
+        <li><input type="button" value="Workshop" class="btn btn-primary nobullet" onclick="displayWorkshop"/></li>
+    </ul>
+</div>
+ 
+
+<div id="AircrafTransferMenu" hidden>
+    <h1>Aircraft Hanger</h1>
+    <div class="well" id="selectableAircraftWell">
+        <p>Load all aircrafts and display them here as buttons</p>
+        <p>let the player select the aircraft they wish to use</p>
+        <p>Divert a fee for the transport of aircrafts.</p>
+    </div>
+    <input type="button" value="Back" class="btn btn-primary" onclick="backToMain"/>
+</div>
+
+
+<div id="AircraftTradeMain" hidden>
+    <h1>Aircraft auction</h1>
+    <div class="well">
+        <p>buy or sell aircrafts here</p>
+    </div>
+    <div id="Aircraft Trade Menu Buy" hidden>
+        
+    </div>
+    <div id="Aircraft Trade Menu Sell" hidden>
+        
+    </div>
+    
+    <input type="button" value="Back" class="btn btn-primary" onclick="backToMain" />
+</div>
+
+
+<div id="UpgradesTrader" hidden>
+    <h1>Trade upgrades</h1>
+    <div class="well">
+        <p>Buy and sell your upgrades here</p>
+    </div>
+    
+
+    <input type="button" value="Back" class="btn btn-primary" onclick="backToMain"/>
+</div>
+
+<div id="Workshop" hidden>
+    <h1>Workshop</h1>
+    <div class="well">
+        <p>Here you can apply and remove any upgrades you've bought</p>
+    </div>
+    <input type="button" value="Back" class="btn btn-primary" onclick="backToMain"/>
+</div>
+
+
+<script type="text/javascript">
+    
+    function displayTransferAircraftMenu(e) {
+        var mainMenu = ((document.getElementById("main")));
+        var transferMenu=((document.getElementById("AircrafTransferMenu")));
+        mainMenu.style.display = 'none';
+        transferMenu.style.display = 'block';
+
+        var moddables = importNamespace("WingsOfSteamAccess");
+        var allCrafts = moddables.Player.GetPlayerAircrafts();
+
+        if (allCrafts.length === 0) {
+            document.getElementById("selectableAircraftWell").innerHTML ="<p>You have no aircrafts...</p>";
+        } else if (allCrafts.length === 1) {
+            document.getElementById("selectableAircraftWell").innerHTML = "<p>You only have one aircrafts...</p>";
+        } else {
+            var str = "";
+            for (var i = 0, len = allCrafts.length; i < len; i++) {
+                var aircraft = allCrafts[i];
+
+                str += '<input value ="'+ aircraft.name + '" type="button" class="btn btn-primary"></input>';
+                
+//                console.log("aircraft name : " + aircraft.name);
+            }
+            document.getElementById("selectableAircraftWell").innerHTML = str;
+        }
+        
+    }
+    
+    function displayAircraftTrade(e) {
+        var mainMenu = ((document.getElementById("main")));
+        var aircraftTradeMenu = ((document.getElementById("AircraftTradeMain")));
+        
+        mainMenu.style.display = 'none';
+        aircraftTradeMenu.style.display = 'block';
+
+        console.log("Fetch all player aircrafts");
+        console.log("Fetch all trader aircrafts");
+    }
+
+    function displayUpgradeTrade(e) {
+        var mainMenu = ((document.getElementById("main")));
+        var aircraftTradeMenu = ((document.getElementById("UpgradesTrader")));
+
+        mainMenu.style.display = 'none';
+        aircraftTradeMenu.style.display = 'block';
+
+        console.log("Fetch all player upgrades");
+        console.log("Fetch all trader upgrades");
+    }
+
+    function displayWorkshop(e) {
+        var mainMenu = ((document.getElementById("main")));
+        var aircraftTradeMenu = ((document.getElementById("Workshop")));
+
+        mainMenu.style.display = 'none';
+        aircraftTradeMenu.style.display = 'block';
+
+        console.log("Render aircraft upgrade inventory");
+        console.log("Fetch all player upgrades");
+        console.log("Somehow allow for attaching images to the cursor (so upgrades can be draged)");
+    }
+    
+    function backToMain(e)
+    {
+        e.htmlTarget.parentElement.style.display = 'none';
+        ((document.getElementById("main"))).style.display = 'block';
+    }
+</script>

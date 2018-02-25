@@ -1,0 +1,19 @@
+{
+  "CompanyName": "Scrap Pile ",
+  "Aircrafts": [
+    {
+      "CrewMembers": [],
+      "CompanyName": "Scrap Pile ",
+      "AircraftId": "START_PLANE",
+      "DisplayName": "Junker",
+      "Description": "It's charitable to call this a \"plane\" but for now she'll fly. It can do a little of everything, but can't do any of it well. Just keep an eye on the upper left wing - it's a bit wobbly.",
+      "Tier": 0,
+      "BaseBuyPrice": 0,
+      "BaseSellPrice": 0,
+      "StockMaxSpeed": 0,
+      "Engines": [],
+      "Wings": [],
+      "Wheels": []
+    }
+  ]
+}
