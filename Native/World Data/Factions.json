@@ -1,0 +1,73 @@
+{
+  "FactionList": [
+    {
+      "Name": "England",
+      "Traders": [
+        "first",
+        "second"
+      ],
+      "MilitarySquadrons": [
+        "first",
+        "second"
+      ],
+      "Aces": [
+        "first",
+        "second"
+      ],
+      "Towns": [
+        "first",
+        "second"
+      ],
+      "Outposts": [
+        "first",
+        "second"
+      ]
+    },
+    {
+      "Name": "France",
+      "Traders": [
+        "first",
+        "second"
+      ],
+      "MilitarySquadrons": [
+        "first",
+        "second"
+      ],
+      "Aces": [
+        "first",
+        "second"
+      ],
+      "Towns": [
+        "first",
+        "second"
+      ],
+      "Outposts": [
+        "first",
+        "second"
+      ]
+    },
+    {
+      "Name": "Germany",
+      "Traders": [
+        "first",
+        "second"
+      ],
+      "MilitarySquadrons": [
+        "first",
+        "second"
+      ],
+      "Aces": [
+        "first",
+        "second"
+      ],
+      "Towns": [
+        "first",
+        "second"
+      ],
+      "Outposts": [
+        "first",
+        "second"
+      ]
+    }
+  ]
+}
